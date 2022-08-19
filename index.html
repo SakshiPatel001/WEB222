@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Sakshi Patel">
+        <meta name="description" content="Information">
+        <meta name="format-detection" content="telephone=no">
+        <title>WEB222 Final Assessment</title>
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a490f17845.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header></header>
+        <main>
+            <!-- Picture w/buttons -->
+            <div id="myCard">
+                <img src="src/myprofile.png" alt="myPic">
+                <div>
+                    <h1>Sakshi Patel</h1>
+                    <p>Web Developer</p>
+                    <!-- Button w/Resume -->
+                    <a href="src/Resume_Sakshi_Patel (1).pdf" download="resume">
+                        <button type="button" tabindex="1">
+                            <i class="fa fa-download"></i>
+                            Resume
+                        </button>
+                    </a>
+
+                    <a href="#info-wrapper">
+                        <button type="button" tabindex="2">
+                            About
+                        </button>
+
+                    </a>
+                    
+                    <!-- Button w/Contact Me Form --> 
+                    <a href="#contact">
+                        <button type="button" tabindex="2">
+                            Contact Me
+                        </button>
+                    </a>
+                    
+
+                </div>
+            </div>
+
+            <!-- Info about Yourself -->
+            <div id="info-wrapper">
+                <div class="info">
+                    <h2 class="info-headings">About Me</h2>
+                    <p>
+                        My name is Sakshi Patel. 
+                        I am a student at Seneca College studying Computer Programming and programming to pursue a first career. 
+                       
+                    </p>
+
+                    <h2>Academic Honesty</h2>
+
+                    <p>
+                        I declare that my assessment is wholly my own work in accordance with Seneca Academic 
+                        Policy. No part of this assessment has been copied manually or electronically from any other 
+                        source (including web sites) except for the information supplied by the WEB222 instructors and /
+                        or made available in this assessment for my use. I also declare that no part of this assignment 
+                        has been distributed to other students.
+                    </p>
+                    <p>
+                        Date: August 14, 2022
+                    </p>
+
+                </div>
+
+                <div class="info">
+                    <h2 class="info-headings" id="basic-info">Basic Information</h2>
+                    <div id="basic-info-wrapper">
+                        <div id="info-header">
+                            <p>Name:</p> 
+                            <p>Email:</p>
+                            <p>Course:</p> 
+                            <p>Section:</p>
+                            <p>Student ID:</p>
+                            <p>Instructor:</p>  
+                         </div>
+
+                        <div id="info-content">
+                            <p>Sakshi Patel</p>
+                            <p>sspatel62@myseneca.ca</p>
+                            <p>WEB222</p>
+                            <p>ZBB</p>
+                            <p>142511203</p>
+                            <p>Noman Atique</p>
+                        </div>   
+                    </div>         
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="sub-headers">
+                <h2>Education</h2>
+                <div class="school">
+                    <div class="credentials">
+                        <p class="expected">2021-2023<br>(Expected)</p>
+                        <h3 id="expCred">Advanced Diploma</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>Advanced Diploma</h3>
+                        <small>Seneca College</small>
+                        <p>Computer Programming and Analysis</p>
+                    </div>
+                </div>
+
+                <div class="school">
+                    <div class="credentials">
+                        <p>2019</p>
+                        <h3>Higher eduction</h3>
+                    </div>
+
+                    <div class="school-info">
+                        <h3>Higher Secondary School</h3>
+                        <small>Shree Narayan Vidhyalay</small>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="sub-headers" id="contact">
+                <h2>Contact Form</h2>
+                <p><span>*</span> Required Field</p>
+                <form id="contact-form" action="https://httpbin.org/post" method="POST">
+                    <label for="full-name">Full Name <span>*</span></label>
+                    <input
+                        id="full-name" 
+                        name="full-name"
+                        autocomplete="name"
+                        type="text"
+                        placeholder="Full Name"    
+                        title="Enter your full name"
+                        tabindex="3"
+                        required
+                    >
+
+                    <label for="organization">Organization</label>
+                    <input
+                        id="organization" 
+                        name="organization"
+                        type="text"
+                        placeholder="Company Name"    
+                        title="Enter organization"
+                        tabindex="4"
+                    >
+
+                    <label for="email">Email <span>*</span></label>
+                    <input
+                        id="email" 
+                        name="email"
+                        autocomplete="email"
+                        type="email"
+                        placeholder="username@email.com"    
+                        pattern="^[a-z0-9]+@[a-z0-9]+\.[a-z]{2,}$"
+                        title="Enter an email address"
+                        tabindex="5"
+                        required
+                    >
+
+                    <label for="city">City <span>*</span></label>
+                    <input
+                        id="city"
+                        name="city"
+                        title="Enter City"
+                        placeholder="Toronto"
+                        list="cities"
+                        tabindex="6"
+                        required    
+                    >
+                    <datalist id="cities">
+                        <option value="Toronto"></option>
+                        <option value="Hamilton"></option>
+                        <option value="Ottawa"></option>
+                        <option value="Waterloo"></option>
+                        <option value="London"></option>
+                        <option value="Kingston"></option>
+                        <option value="Windsor"></option>
+                        <option value="Barrie"></option>
+                        <option value="Other"></option>
+                    </datalist>
+
+                    <label for="postal">Postal Code <span>*</span></label>
+                    <input
+                        id="postal" 
+                        name="postal"
+                        autocomplete="postal-code"
+                        type="text"
+                        placeholder=""    
+                        pattern="^[a-zA-Z]\d[a-zA-Z]\s?\d[a-zA-Z]\d$"
+                        title="Enter valid postal code"
+                        tabindex="7"
+                        required
+                    >
+
+                    <label>Subject <span>*</span></label>
+                    <div id="subject">
+                        
+                        <div>
+                            <input
+                            id="question"
+                            name="subject"
+                            type="radio"
+                            tabindex="8"
+                            required
+                            >
+                            <label for="question">Question</label>
+                        </div>
+                        
+                        <div>
+                            <input
+                            id="comment"
+                            name="subject"
+                            type="radio"
+                            tabindex="9"
+                            required
+                            >
+                            <label for="comment">Comment</label>
+                        </div>
+                        
+                        <div>
+                            <input
+                            id="hiring"
+                            name="subject"
+                            type="radio"
+                            tabindex="10"
+                            required
+                            >
+                            <label for="hiring">Hiring</label>
+                        </div>
+
+                        <label id="rate-label" for="rate" hidden>Hourly Rate <span>*</span></label>
+                        <input
+                            id="rate"
+                            name="rate"
+                            type="text"
+                            title="Enter value"
+                            pattern="^\$?\d+(\.\d{2})?$"
+                            placeholder = "$30";
+                            tabindex="11"
+                            hidden
+                        >
+                    </div>
+                   
+                    <label for="message">Message <span>*</span></label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Enter Message Here....."
+                        maxlength="2000"
+                        tabindex="12"
+                        required
+                    ></textarea>
+
+                    <div id="form-button">
+                        <input type="submit" name="submit" value="Submit" tabindex="13">
+                        <input type="reset" name="reset" value="Reset" tabindex="14">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="JS/script.js"></script>
+
+    </body>
+</html>
